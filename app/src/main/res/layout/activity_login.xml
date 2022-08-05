@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uiIvLoginImage"
+        android:paddingTop="80dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/download"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/uiEtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:hint="@string/str_user_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@id/uiIvLoginImage"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/ic_user"
+         />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/str_password"
+        android:id="@+id/uiEtPassword"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/uiEtUserName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/ic_password"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uiTvForgotPassword"
+        android:text="@string/str_forgot_password"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/uiEtPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_sign_in"
+        android:id="@+id/uiBtnSignIn"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/pink_700"
+        app:layout_constraintTop_toBottomOf="@+id/uiTvForgotPassword"
+        android:layout_marginTop="60dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiTvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_dont_have_an_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uiBtnSignIn"
+        android:layout_margin="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiTvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_sign_up"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/uiTvMessage"
+        app:layout_constraintTop_toBottomOf="@+id/uiBtnSignIn"
+        android:layout_margin="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

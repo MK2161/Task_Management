@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Task Management</string>
+    <string name="str_user_name">UserName</string>
+    <string name="str_name">Name</string>
+    <string name="str_birthday">Birthday</string>
+    <string name="str_email">Email</string>
+    <string name="str_password">Password</string>
+    <string name="str_sign_in">Sign In</string>
+    <string name="str_join">Join</string>
+    <string name="str_sign_up">Sign Up</string>
+    <string name="str_forgot_password">Forgot Password</string>
+
+    <string name="str_add_title">Add Title</string>
+    <string name="str_short_description">Short description</string>
+    <string name="str_all_day">All day</string>
+    <string name="str_from">From</string>
+    <string name="str_time_9">9:00 am</string>
+    <string name="str_february9_2015">February 9, 2015</string>
+    <string name="str_to">To</string>
+    <string name="str_time_10">10:30 am</string>
+    <string name="str_location">Location</string>
+    <string name="str_via_email">via Email</string>
+    <string name="str_starbucks">Starbucks</string>
+    <string name="str_notification">Notification</string>
+    <string name="str_people">People</string>
+    <string name="str_repeat">Repeat</string>
+    <string name="str_monthly">Monthly</string>
+    <string name="str_shop">Shop</string>
+    <string name="str_apples">Apples</string>
+    <string name="str_bananas">Bananas</string>
+    <string name="str_juice">Juice</string>
+    <string name="str_bread">Bread</string>
+    <string name="str_cheese">Cheese</string>
+    <string name="str_milk">Milk</string>
+    <string name="str_yogurt">Yogurt</string>
+    <string name="str_dont_have_an_account">Don\'t have an account</string>
+    <string name="str_already_have_an_account"> Already have an account</string>
+    <string name="str_next"> Next</string>
+    <string name="str_good_morning"> Good Morning!</string>
+    <string name="str_february"> FEBRUARY</string>
+    <string name="str_new_subpage_for_janet">New subpage for janet</string>
+    <string name="str_time_8">8 – 10am</string>
+    <string name="str_catch_up_with_tom">Catch up with Tom</string>
+    <string name="str_time_12">11 – 12pm Hangouts</string>
+    <string name="str_lunch_with_diane">Lunch with Diane</string>
+    <string name="str_time_1">1pm Restaurant</string>
+    <string name="str_2015">2015</string>
+    <string name="str_28">28%</string>
+    <string name="str_Good_job_you_completed_6_more_tasks_this_month"> Good job,you\'ve completed 6% more tasks this month</string>
+    <string name="str_completed">Completed</string>
+    <string name="str_108">108</string>
+    <string name="str_snoozed">Snoozed</string>
+    <string name="str_56">56</string>
+    <string name="str_over_due">Overdue</string>
+    <string name="str_36">36</string>
+    <string name="str_18">18%</string>
+    <string name="str_54">54%</string>
+    <string name="str_nicole_james">Nicole James</string>
+    <string name="str_general">General</string>
+    <string name="str_sound">Sound</string>
+    <string name="str_theme">Theme</string>
+    <string name="str_support">Support</string>
+    <string name="str_privacy">Privacy</string>
+    <string name="str_logout">Logout</string>
+    <string name="str_standard">Standard</string>
+    <string name="str_home">Home</string>
+    <string name="str_my_groups">My Groups</string>
+    <string name="str_overview">Overview</string>
+    <string name="str_groups">Groups</string>
+    <string name="str_lists">Lists</string>
+    <string name="str_timeline">Timeline</string>
+    <string name="str_setting">Setting</string>
+    <string name="str_monday">MONDAY, FEB 8,2015</string>
+    <string name="str_call_with_ryon">Call with Ryon</string>
+    <string name="str_time_2">2 pm </string>
+    <string name="str_sunday">SUNDAY, FEB 7,2015</string>
+    <string name="str_walk_with_mary"> Walk with Mary</string>
+    <string name="str_bam_city_park"> Bam City Park</string>
+    <string name="str_explain"> keep your work organized and quickly check your reminders with simple calenders</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

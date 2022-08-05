@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.taskmanagement.ui.SettingActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/uiIvShopImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/uiIvLogoutMenu"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/image_logout"
+            app:layout_constraintBottom_toBottomOf="@+id/uiIvNavDrawer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/uiIvNavDrawer" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/uiIvNavDrawer"
+            android:layout_width="55dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_menu" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/uiTvGoodMorning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/str_nicole_james"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="@id/uiIvNavDrawer"
+            app:layout_constraintBottom_toBottomOf="@id/uiIvShopImage"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/uiTvGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:text="@string/str_general"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/uiIvShopImage" />
+
+        <View
+            android:id="@+id/uiViewDivider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/tmmt_grey_divider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/uiTvNotification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uiTvGeneral" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/uiTvNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:text="@string/str_notification"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uiTvGeneral" />
+
+        <View
+            android:id="@+id/uiViewDivider1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/tmmt_grey_divider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/uiTvSound"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uiTvNotification" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/uiTvSound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:text="@string/str_sound"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/uiTvNotification" />
+
+        <View
+            android:id="@+id/uiViewDivider2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/tmmt_grey_divider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/uiTvTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uiTvSound" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/uiTvTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:text="@string/str_theme"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/uiTvSound" />
+
+        <View
+            android:id="@+id/uiViewDivider3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/tmmt_grey_divider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/uiTvSound"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uiTvTheme" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/uiTvSupport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:text="@string/str_support"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/uiTvTheme" />
+
+        <View
+            android:id="@+id/uiViewDivider4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/tmmt_grey_divider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/uiTvSupport"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uiTvTheme" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/uiTvPrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:text="@string/str_privacy"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/uiTvSupport" />
+
+        <View
+            android:id="@+id/uiViewDivider5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/tmmt_grey_divider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/uiTvPrivacy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uiTvSupport" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/uiTvLogout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:text="@string/str_logout"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/uiTvPrivacy" />
+
+        <View
+            android:id="@+id/uiViewDivider6"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/tmmt_grey_divider"
+            app:layout_constraintBottom_toTopOf="@id/uiTvLogout1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uiTvPrivacy" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/uiScOnOffNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:checked="true"
+            android:focusable="false"
+            app:layout_constraintBottom_toBottomOf="@id/uiTvNotification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/uiTvNotification"
+            app:theme="@style/Color1SwitchStyle" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/uiScOnOffAllDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="20dp"
+            android:focusable="false"
+            app:layout_constraintBottom_toBottomOf="@id/uiTvSound"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uiScOnOffNotification"
+            app:layout_constraintVertical_bias="0.0"
+            app:theme="@style/Color1SwitchStyle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/uiIvGeneral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:rotation="180"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/grey_400"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uiIvShopImage" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/uiIvTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:rotation="180"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/grey_400"
+            app:layout_constraintBottom_toBottomOf="@id/uiTvTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/uiTvTheme" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/uiIvSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:rotation="180"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/grey_400"
+            app:layout_constraintBottom_toBottomOf="@id/uiTvSupport"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/uiTvSupport" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/uiIvPrivacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:rotation="180"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/grey_400"
+            app:layout_constraintBottom_toBottomOf="@id/uiTvPrivacy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/uiTvPrivacy" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/uiIvLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:rotation="180"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/grey_400"
+            app:layout_constraintBottom_toBottomOf="@id/uiTvLogout1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/uiTvLogout1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/uiTvStandard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:padding="4dp"
+            android:text="@string/str_standard"
+            android:textColor="@color/grey_700"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@id/uiIvTheme"
+            app:layout_constraintEnd_toStartOf="@id/uiIvTheme"
+            app:layout_constraintTop_toTopOf="@id/uiIvTheme" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.taskmanagement.ui.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:id="@+id/uiIvBackgroundImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/nature"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/uiIvSearch"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="40dp"
+            android:background="@drawable/ic_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/uiIvNavDrawer"
+            android:layout_width="45dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_menu" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/uiTvGoodMorning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/str_good_morning"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:id="@+id/uiIvProfilePhoto"
+            app:layout_constraintTop_toBottomOf="@id/uiTvGoodMorning"
+            android:src="@drawable/profile_pic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uiTvFebruary"
+            android:text="@string/str_february"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/uiIvProfilePhoto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uiIvBack"
+            android:src="@drawable/ic_back_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uiIvProfilePhoto"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:id="@+id/uiIvProfile"
+            android:layout_margin="40dp"
+            android:src="@drawable/ic_nircholos"
+            app:layout_constraintTop_toBottomOf="@id/uiIvBackgroundImage"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/uiIvProfile1"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_margin="40dp"
+            android:src="@drawable/ic_roy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uiIvProfile" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/uiIvProfile2"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_margin="40dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/profile_diane"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uiIvProfile1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uiTvProfileName"
+            android:text="@string/str_new_subpage_for_janet"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/uiIvProfile"
+            app:layout_constraintStart_toEndOf="@id/uiIvProfile"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uiTvTime"
+            android:text="@string/str_time_8"
+            android:textSize="10sp"
+            android:textColor="@color/grey_800"
+            app:layout_constraintTop_toBottomOf="@id/uiTvProfileName"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@id/uiIvProfile"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uiTvPeopleName"
+            android:text="@string/str_catch_up_with_tom"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/uiIvProfile1"
+            app:layout_constraintStart_toEndOf="@id/uiIvProfile1"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uiTvRestTime"
+            android:text="@string/str_time_12"
+            android:textSize="10sp"
+            android:textColor="@color/grey_800"
+            app:layout_constraintTop_toBottomOf="@id/uiTvPeopleName"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/uiIvProfile1"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uiTvReminder"
+            android:text="@string/str_lunch_with_diane"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/uiIvProfile2"
+            app:layout_constraintStart_toEndOf="@id/uiIvProfile2"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uiTvFood"
+            android:text="@string/str_time_1"
+            android:textSize="10sp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/grey_800"
+            app:layout_constraintTop_toBottomOf="@id/uiTvReminder"
+            android:layout_marginTop="10dp"
+
+            app:layout_constraintStart_toEndOf="@id/uiIvProfile2"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:id="@+id/uiFloat"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/red_A200"
+            android:padding="20dp"
+            android:src="@drawable/ic_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="40dp"
+             />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

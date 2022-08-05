@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startingGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="260dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/uiIvCancelImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="@+id/startingGuideLine"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/icon_primary_light"
+        android:src="@drawable/img_close" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uiTvHome"
+        android:text="@string/str_home"
+        app:layout_constraintTop_toBottomOf="@+id/uiIvCancelImage"
+        app:layout_constraintStart_toStartOf="@id/startingGuideLine"
+        android:textColor="@color/black"
+        android:layout_margin="30dp"
+        android:textSize="25sp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uiTvOverview"
+        android:textSize="25sp"
+        android:text="@string/str_overview"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/uiTvHome"
+        android:layout_margin="30dp"
+        app:layout_constraintStart_toStartOf="@id/startingGuideLine"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:id="@+id/uiTvGroups"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/str_groups"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/uiTvOverview"
+        app:layout_constraintStart_toStartOf="@id/startingGuideLine"
+        android:layout_margin="30dp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uiTvLists"
+        android:textSize="25sp"
+        android:text="@string/str_lists"
+        app:layout_constraintTop_toBottomOf="@id/uiTvGroups"
+        android:layout_margin="30dp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uiTvTimeline"
+        android:textColor="@color/black"
+        android:text="@string/str_timeline"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/uiTvLists"
+        android:layout_margin="30dp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uiTvSetting"
+        android:text="@string/str_setting"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@id/uiTvTimeline"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uiTvLogout"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="@string/str_logout"
+        app:layout_constraintTop_toBottomOf="@id/uiTvSetting"
+        android:layout_margin="30dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
